@@ -12,5 +12,8 @@ if (key === alphabet[index]) {
          }
        } else {
          index = 0;
-       }
-     }
+       } else {
+      index = 0
+    }
+  }, false)
+}
