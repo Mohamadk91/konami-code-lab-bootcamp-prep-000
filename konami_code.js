@@ -6,11 +6,11 @@ document.body.addEventListener("keydown", function (e) {
 const key = parseInt(e.detail || e.which);
 if (key === alphabet[index]) {
     index++;
-
-
-
-
-
-
-
-}
+    if (index === alphabet.length) {
+         alert("Hurray!");
+         index = 0;
+         }
+       } else {
+         index = 0;
+       }
+     }
